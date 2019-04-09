@@ -1,5 +1,5 @@
 #pragma once
-#include <libgpsmm>
+#include <libgpsmm.h>
 
 namespace GPSLib
 {
@@ -10,6 +10,9 @@ public:
   virtual ~GPSClient();
 
   bool Initialize();
+
+  void Run();
+
   void Shutdown();
 
 private:
