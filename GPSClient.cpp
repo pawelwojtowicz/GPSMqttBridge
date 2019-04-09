@@ -31,7 +31,8 @@ void GPSClient::Run()
       std::cerr << "Read error.\n";
       return;
     } else {
-//            PROCESS(newdata);
+      gps_fix_t& gpsPos = newdata->fix;
+	
     }
   }
 }
